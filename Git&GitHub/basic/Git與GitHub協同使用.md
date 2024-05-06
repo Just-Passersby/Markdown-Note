@@ -82,11 +82,11 @@ git push origin master:master
 ```bash
 git push origin $LOCAL_FORK:$REMOTE_FORK
 ```
-也就是說冒號前面是本地的分之名稱，後面是Server上的分之名稱，若今天push的時候不希望是`master`而是`Idontwant996`就可以這樣寫：
+也就是說冒號前面是本地的分之名稱，後面是Server上的分之名稱，若今天push的時候不希望是`master`而是`freedom`就可以這樣寫：
 ```bash
-git push origin master:Idontwant996
+git push origin master:freedom
 ```
-這樣在Server建立/更新的分之名稱就不會是`master`，而是`Idontwant996`
+這樣在Server建立/更新的分之名稱就不會是`master`，而是`freedom`
 
 # Reference
 [為你自己學Git - 十、遠端共同協作 - 使用 GitHub：Git教學：如何 Push 上傳到 GitHub？](https://gitbook.tw/chapters/github/push-to-github#google_vignette)

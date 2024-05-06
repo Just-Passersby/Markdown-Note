@@ -86,7 +86,7 @@ git push origin $LOCAL_FORK:$REMOTE_FORK
 ```bash
 git push origin master:freedom
 ```
-這樣在Server建立/更新的分之名稱就不會是`master`，而是`freedom`
+這樣在Server建立/更新的分支名稱就不會是`master`，而是`freedom`
 
 # Reference
 [為你自己學Git - 十、遠端共同協作 - 使用 GitHub：Git教學：如何 Push 上傳到 GitHub？](https://gitbook.tw/chapters/github/push-to-github#google_vignette)

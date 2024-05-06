@@ -30,7 +30,22 @@ git remote add Idontwant996 $REMOTE_PATH
 ```bash
 git push -u origin master
 ```
+![](../Pictures/git_first_push.png)
 
+雖然我們只用了`push`一行指令但其實Git做了以下這些事：
+1. 把`master`分之的內容推向`origin`這個位置
+2. 在`origin`這個節點上，如果`master`不存在，就建立名叫`master`的同名分支
+3. 如果節點本身存在`master`分支，則更新該分支
+4. 設定upstream，就是`-u`這個參數
+
+如果你的代稱叫做`Idontwant996`，然後你想把分之`freedom`push上去，則同理
+```bash
+git push Idontwant996 freedom
+```
+
+當整個上傳完成後，可以把Repository整理一下，就會變成你Git所管理的內容![](../Pictures/push_on_GitHub_later.png)
+
+這樣就順利把本地專案上傳至遠端了
 
 # Reference
 [為你自己學Git - 十、遠端共同協作 - 使用 GitHub：Git教學：如何 Push 上傳到 GitHub？](https://gitbook.tw/chapters/github/push-to-github#google_vignette)

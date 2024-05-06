@@ -31,14 +31,14 @@ git remote add Idontwant996 $REMOTE_PATH
 總而言之，他只是一個遠端節點的代稱
 設定完成之後，就可以把東西Push上去了
 ```bash
-git push -u origin master
+git push -u origin main
 ```
 ![](../Pictures/git_first_push.png)
 
 雖然我們只用了`push`一行指令但其實Git做了以下這些事：
-1. 把`master`分之的內容推向`origin`這個位置
-2. 在`origin`這個節點上，如果`master`不存在，就建立名叫`master`的同名分支
-3. 如果節點本身存在`master`分支，則更新該分支
+1. 把`main`分之的內容推向`origin`這個位置
+2. 在`origin`這個節點上，如果`main`不存在，就建立名叫`main`的同名分支
+3. 如果節點本身存在`main`分支，則更新該分支
 4. 設定upstream，就是`-u`這個參數
 
 如果你的代稱叫做`Idontwant996`，然後你想把分之`freedom`push上去，則同理
@@ -59,34 +59,34 @@ git push Idontwant996 freedom
 
 如果有設定，他就會把該分之當作預設的upstream，舉例來說：
 ```bash
-git push -u origin master
+git push -u origin main
 ```
-此時會把`origin/master`設為本地`master`分之的upstream。之後執行`git push`而不添加其他參數的時候，Git就會預設你要推往`origin`這個遠端節點，並更新`master`這個節點
+此時會把`origin/main`設為本地`main`分之的upstream。之後執行`git push`而不添加其他參數的時候，Git就會預設你要推往`origin`這個遠端節點，並更新`main`這個節點
 
 也就是說，如果沒有使用`-u`這個參數的話，每一次的push都要說明白
 ```bash
-git push origin master
+git push origin main
 ```
 不然Git就會跟你說他不知道要推往哪裡
 
 # 你所不知道的Git分支的命名
 前面提到，Push的方式是這樣
 ```bash
-git push origin master
+git push origin main
 ```
 其實完整版的指令是下面這樣
 ```bash
-git push origin master:master
+git push origin main:main
 ```
 讓我們用Unix-Like的方式解釋這個東西
 ```bash
 git push origin $LOCAL_FORK:$REMOTE_FORK
 ```
-也就是說冒號前面是本地的分之名稱，後面是Server上的分之名稱，若今天push的時候不希望是`master`而是`freedom`就可以這樣寫：
+也就是說冒號前面是本地的分之名稱，後面是Server上的分之名稱，若今天push的時候不希望是`main`而是`freedom`就可以這樣寫：
 ```bash
-git push origin master:freedom
+git push origin main:freedom
 ```
-這樣在Server建立/更新的分支名稱就不會是`master`，而是`freedom`
+這樣在Server建立/更新的分支名稱就不會是`main`，而是`freedom`
 
 # Reference
 [為你自己學Git - 十、遠端共同協作 - 使用 GitHub：Git教學：如何 Push 上傳到 GitHub？](https://gitbook.tw/chapters/github/push-to-github#google_vignette)

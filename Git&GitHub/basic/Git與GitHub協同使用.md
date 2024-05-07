@@ -11,7 +11,7 @@ index:
 當你建立完成後，可以看到像是下圖的引導畫面![Quick setup](../Pictures/Repository_setup.png)
 版本控制的操作與[透過git控制檔案版本.md](透過git控制檔案版本.md)一致，忘了可以回去看
 
-可以看到無論是new repository還是push an existing repisitory可以看到最後三個步驟都一樣
+可以看到無論是new repository還是push an existing repository可以看到最後三個步驟都一樣
 照著上面指令操作即可，但如果想瞭解他們在幹嘛可以接著往下看
 
 當讓Git控制完成版本後由於此時檔案都還是在本機，所以需要將檔案push到Git Server，首先設定一個伺服器節點

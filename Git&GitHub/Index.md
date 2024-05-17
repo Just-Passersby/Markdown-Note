@@ -17,7 +17,7 @@
 [extension: gitignore](basic/gitignore.md)
 
 # Chapter 3: 版本控制觀念與實作
-[Git內的刪除重新命名](control/Git內的刪除與重新命名.md)
+[Git內的刪除重新命名](control/Git內的檔案刪除與重新命名.md)
 
 # Chapter 4: 
 

@@ -23,14 +23,14 @@ ln -s /etc/nginx/sites-available/example sites-enabled/
 # 相對路徑建立法
 ln -s ../sites-available/example sites-enabled/
 ```
-若你有有用過Apache2並觀察過你會發現2者實現方式其實是一樣的
+若你有有用過Apache2並觀察過他的`a2ensite`你會發現2者實現方式其實是一樣的
 將Symboilc Link建立好後，再介紹最後一個指令：`nginx -t`
 
 # 測試
 建立完成後使用`nginx -t`這個指令就能測試站台的語法是否有錯，如果沒錯就會跳出is ok和successful的字樣![](../Picture/nginx_setting_successful.png)
-成功後就可以將服務重啟，如果是failed就慨他所提供的錯誤資訊去確認你的設定哪裡有錯誤
+成功後就可以將服務重啟，如果是failed就依據他所提供的錯誤資訊去確認你的設定哪裡有錯誤
 服務重啟指令（Debian/Ubuntu）：
 ```bash
 systemctl reload nginx
 ```
-完成之後就可以來欣賞妳的網頁啦![](..//Picture/HTTP_page.png)
+完成之後就可以來欣賞你的網頁啦![](..//Picture/HTTP_page.png)

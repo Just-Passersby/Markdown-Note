@@ -11,6 +11,8 @@ index:
 [HTTPS架站](./Basic/HTTPS_site.md)
 [重新導向](./Basic/Redirect.md)
 
+[Extension: 使用OpenSSL產生CSR](./Basic/使用OpenSSL產生CSR.md)
+
 # Proxy
 
 

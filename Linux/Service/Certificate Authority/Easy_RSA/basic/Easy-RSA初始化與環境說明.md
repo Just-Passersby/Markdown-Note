@@ -20,11 +20,11 @@ Index:
 ```bash
 ./easyrsa help
 
-# same effect
+# same output
 ./easyrsa
 ```
 當然你也可以在`help`後面接上你要查詢的功能，會有更詳細的說明，比如:![](../Pictures/easyrsa_help_build-ca.png)
-如果有`[ cmd-opts ]`的功能，也會附上可以用的參數
+如果有`[ cmd-opts ]`的功能，也會附上可以用的參數與對應的參數說明
 
 如果你本身有PKI的基礎加上看得懂裡面的英文的話，即使沒用過也是能夠迅速上手並達成基本操作的
 
@@ -37,7 +37,7 @@ Easy RSA在使用的第一步是要先初始化PKI，使用以下指令初始化
 ```
 後續如果你想把你現在的CA刷掉也是透過這個指令實現
 
-初始化完成後可以看到`easy-rsa`的目錄底下多了`pki`這個目錄，除了真正的CA設定檔，還多了2個目錄:
+初始化完成後可以看到`easy-rsa`的目錄底下多了`pki`這個目錄，裡面除了真正的CA設定檔，還多了2個目錄:
 - `reqs`: 用於存放向Easy RSA申請的憑證
 - `private`: 存放Easy RSA簽出來的私鑰
 

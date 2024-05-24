@@ -41,6 +41,7 @@ SAN由於是一種拓展欄位，所以需要將相關的設定打開
 - `IP.N`代表的是IPv4 address，一般只要有`DNS.N`就好
 
 然後`N`自行替換成數字，然後按照順序排列（參考圖片）
+至於IP和DNS是IP和DNS交錯使用還是IP和DNS分開都無所謂，只要有按照序列號列出你需要的Subject alternative names就好
 
 # 產生憑證簽署要求
 ## 產生Private key

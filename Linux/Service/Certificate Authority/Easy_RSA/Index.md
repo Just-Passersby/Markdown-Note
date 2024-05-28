@@ -9,6 +9,8 @@ Index:
 # basic
 ~~讓你至少能簽個Server authenication憑證~~
 [Easy RSA基本操作](./basic/Easy-RSA初始化與環境說明.md)
+[憑證簽發與管理](./basic/憑證簽發與管理.md)
+[部署CRL](./basic/部署CRL.md)
 
 
 # Reference

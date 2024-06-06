@@ -57,15 +57,16 @@ openssl genrsa -out private_key.key [length]
 ### 現代橢圓曲線Private key
 以現如今的行業標準橢圓曲線是個更好的方法，可以用更短的長度換取等效安全的RSA
 比如P224 = RSA 2048
-由於早期部分的橢圓曲線加密法有漏洞，所以我們這裡使用更加現代的ed25519 (256 bits) / ed448 (448 bits)
+由於考量到新型的ECDSA使用率越來越高，所以預留使用ed25519 (256 bits) / ed448 (448 bits)簽名的憑證
 我們以ed25519為例，我們使用以下指令產生私鑰
 ```bash
 openssl genpkey -algorithm ed25519 -out private.key
 ```
 
-> 注意ed25519/ed447與x25519/x447兩者不一樣
+> 注意ed25519/ed448與x25519/x448兩者不一樣，前者為ECDSA的一種，後者是ECDH標準
 > 前者為基於Twisted Edwards curve用於身份驗證的算法（憑證屬於一種身份驗證）
 > 後者為ECDH的Key Exchange協定
+> 這種基於twisted Edwards curve的ECDSA雖然用於身份驗證的使用率越來越高，但是瀏覽器普遍缺乏支援，可以參考[這個網站](https://caniuse.com/mdn-api_subtlecrypto_sign_ed25519)查看是否支援
 
 如果你希望使用一般的橢圓曲線來產生憑證私鑰，可以使用以下指令列出OpenSSL支援的經典橢圓曲線加密法：
 ```bash

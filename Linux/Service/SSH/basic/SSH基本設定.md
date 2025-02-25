@@ -29,7 +29,7 @@ PermitRootLogin [OPTION]    # 可用的參數為yes/no/prohibit-password和force
                             # prohibit-password顧名思義，不允許密碼登入
                             # forced-commands-only允許公鑰登入，但必須提前指定好登入後執行的指令，直接ssh進來操作是不允許的（password驗證的部份有待商榷）
 
-AyrhorizedkeysFile [PATH]   # SSH登入驗證的金鑰路徑
+AuthorizedkeysFile [PATH]   # SSH使用金鑰驗證時的金鑰路徑
 
 ```
 

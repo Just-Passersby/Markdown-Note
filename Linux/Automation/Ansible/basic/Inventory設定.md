@@ -72,3 +72,6 @@ myhosts:
         ansible_user: user
 ```
 因此才會不只介紹如何使用YAML寫，以及如何從ini跳轉到YAML
+
+# Reference
+[Ansuble Getting started - Building an inventory](https://docs.ansible.com/ansible/latest/getting_started/get_started_inventory.html)

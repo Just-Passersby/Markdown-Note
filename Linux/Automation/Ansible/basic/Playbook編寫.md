@@ -23,7 +23,7 @@ Module看起來有點長阿，主要是因為它包含了宣告是Ansible內建�
 ```YAML
 - name: It is Playbook      # Play
   hosts: myhosts
-  task:                     # Task    
+  tasks:                     # Task    
    - name: Ping hosts
      ping:                  # Module
 

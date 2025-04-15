@@ -15,9 +15,10 @@ Ansible支持2種格式來編寫Inventory：ini和YAML
 myhosts:
     hosts:
         my_hosts_01:
-            ansbile_hosts: 192.168.10.11
+            ansbile_host: 192.168.10.11
         my_hosts_02:
-            ansbile_hosts: 192.168.10.12
+            ansbile_host: 192.168.10.12
+        # ansible_host 沒有 **s**
 ```
 
 `myhosts`指的是群組名稱
@@ -33,7 +34,7 @@ ansible myhosts -m ping -i inventory.ini
 # Simple ini to YAML
 如果你直接照著官方的文檔寫應該會寫出像我上面這種YAML的inventory，然後使用`ansible-inventory`測試也會過，直到使用ansible ping你就會發現![](../Pictures/YAML_inventory_error.png)
 
-這種問題，除了透過設定DNS或者修改`hosts`文件來讓Ansible可以解析之外，你也可以先用ini格式寫好主機和分配Group，然後再用剛剛驗證inventory的指令轉換成YAML格式
+這種問題，那就是你寫成了`ansible_host**s**`，是`ansible_host`，如果你是學ini起家的，會是對原本就有的`inventory.ini`做YAML轉換，可以先用ini格式寫好主機和分配Group，然後再用剛剛驗證inventory的指令轉換成YAML格式
 
 你說怎轉換？加個`-y`就好，像這樣：
 ```bash

@@ -79,6 +79,8 @@ ansible_become_password: P@ssw0rd
 
 接著你就可以使用`ansible-playbook -i inventory.yml PLAYBOOK.yml`做測試了，如果你有用`ansible-vault`編寫變數檔，記得加入`--ask-vault-pass`參數，變成`ansible-playbook -i inventory.yml PLAYBOOK.yml --ask-vault-pass`，上面的Playbook執行完應該結果會類似下面這樣：![](../Pictures/become_whoami.png)
 
+如果我用Vault的話不是還要輸入密碼？那這樣為何不直接用`-K`就好？如果你每個伺服器的become Password甚至User都不一樣，那這種可以根據Host的決定使用不同的變數檔，並且變數檔可以使用統一的密碼甚至是密碼檔來管理，進而簡化CI/CD的部屬（By Grok 3）
+
 # Reference
 (Ansible Docs:Understanding privilege escalation: become)[https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html]
 (Ansible Docs:Become plugins)[https://docs.ansible.com/ansible/latest/plugins/become.html#become-plugins]

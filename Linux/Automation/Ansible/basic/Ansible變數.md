@@ -94,9 +94,13 @@ debut:
   msg: "Printed {{ item }}"
 loop: "{{ range(STR, END) | list }}"
 ```
-`range`後面的`list`是用來把前面的`range`所指定的變數範圍轉變為list，這樣你就會基本的`loop`用法了
-
-但你知道，loop可以搭配dict嗎？
+`range`後面的`list`是用來把前面的`range`所指定的變數範圍轉變為list，另外`range`的語法跟Python一樣，可以使用`range(STR, END, STEP)`，比如如下：
+```YAML
+debut:
+  msg: "Printed {{ item }}"
+loop: "{{ range(STR, END, STEP) | list }}"
+```
+這樣你就會基本的`loop`用法了，但你知道，loop可以搭配dict嗎？
 
 
 # Reference

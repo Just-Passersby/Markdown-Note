@@ -13,3 +13,6 @@
 image是給容器運行隔離開的檔案系統。除了檔案系統還必須包含需要的二進制檔案、依賴項、腳本等，除此之外還可以透過其他設定，指定容器開啟時執行的指令、環境變數和metadata等東西。
 
 有了image的加入，讓Container看起來很像小型系統，但它本身不是虛擬化，依賴的Kernel功能不一樣，請不要跟虛擬化混唯一談！
+
+# Reference
+[Docker Docs - Containerize an application](https://docs.docker.com/get-started/workshop/)

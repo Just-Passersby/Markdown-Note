@@ -92,7 +92,7 @@ Common Name是代表要簽給哪台機器的憑證，如果要給好幾個機器
 申請的過程大致長得像這樣:![](../Picture/Certificate_request.png)
 接下來就可以把CSR丟給CA等待憑證簽發下來了
 
-# Refernce
+# Reference
 [ECS: Creating SSL certificates to support Subject Alternative Names (SANs)](https://www.dell.com/support/kbdoc/zh-tw/000021675/ecs-creating-ssl-certificates-to-support-subject-alternative-names-sans)
 [OpenSSL genrsa](https://www.openssl.org/docs/man1.1.1/man1/genrsa.html)
 [產生SSL憑證簽署要求(CSR)](https://docs.gandi.net/zh-hant/ssl/common_operations/csr.html)

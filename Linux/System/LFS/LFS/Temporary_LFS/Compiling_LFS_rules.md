@@ -1,7 +1,7 @@
 # Compiling LFS rules
 在Chapter 5前面有2個重要的Important，第二個Important可能需要額外解釋會比較好理解，說明一下
 
-這個Important主要是在說明後面要編譯套件要做的事情以及預設環境，你只要看到這種標題是套件名稱並且有套件介紹以及說明編譯時長(單位: SUB)和套件大小，如下圖，請做以下這些事![](../Pictures/Binutils-2.45-Pass1.png)
+這個Important主要是在說明後面要編譯套件要做的事情以及預設環境，你只要看到這種標題是套件名稱並且有套件介紹以及說明編譯時長(單位: SBU)和套件大小，如下圖，請做以下這些事![](../Pictures/Binutils-2.45-Pass1.png)
 1. 套件都放在`$LFS/sources`底下(書中是/mnt/lfs/sources)
 2. 切換目錄到`$LFS/sources`
 3. 針對每個套件要做的事情：

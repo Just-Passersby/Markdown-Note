@@ -45,6 +45,8 @@ become可以在Ansible Playbook下面的Play和Task層級運作
 - `ansible_common_remote_group`: `setflac`和`chown`都失敗，建立一個臨時檔案並使用`chgrp`到另一個群組。可參考[官方文獻](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-unprivileged-user)獲得更多資訊
 
 ### 在Playbook中增加become的安全性與可維護行
+Ansible用來加密YAML檔案的指令：`ansible-vault`
+
 Ansible雖然支持使用剛剛提到的`ansible_become_password`設定become password，但如果直接寫在上面會有相當嚴重的資安問題，所以真的要這麽做最好將這項參數加密。
 
 官方的文獻可以參考[Using encrypted variables and files](https://docs.ansible.com/ansible/latest/vault_guide/vault_using_encrypted_content.html#playbooks-vault)，我結合ChatGPT和Grok 3後整理成如下：
@@ -65,7 +67,7 @@ ansible_become_password: P@ssw0rd
 ```YAML
 - name: become test
   hosts: myhosts
-  vars_file:
+  vars_files:
   - su_root_vault.yml
   tasks:
   - name: Log user name

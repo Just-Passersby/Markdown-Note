@@ -10,7 +10,7 @@
 ```YAML
 - name: whoami 1
   hosts: myhosts
-  vars_file:
+  vars_files:
     - su_root_vault.yml
   tasks:
     - name: whoami command

@@ -33,7 +33,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 安裝完成後就可以使用以下指令測試：
 ```bash
-sudo docker run hello-world
+sudo docker run --rm hello-world
 ```
 日後不想用Docker[教學在這](https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine)
 
@@ -47,7 +47,7 @@ sudo usermod -aG docker $USER
 ```
 然後登出再登入，再來執行指令測試：
 ```bash
-docker run hello-world
+docker run --rm hello-world
 ```
 
 # Reference

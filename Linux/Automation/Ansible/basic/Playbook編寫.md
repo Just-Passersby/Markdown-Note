@@ -10,7 +10,7 @@ Playbook可以分為以下3個部份：
 ```YAML
 - name: It is Playbook      # Play
   hosts: myhosts
-  task:                     # Task    
+  tasks:                     # Task    
    - name: Ping hosts
      ansible.builtin.ping:  # Module
 

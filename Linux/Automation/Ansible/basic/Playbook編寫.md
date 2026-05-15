@@ -31,6 +31,8 @@ Module看起來有點長阿，主要是因為它包含了宣告是Ansible內建�
      debug:                 # Module
        msg: Hello world!
 ```
+檢查Playbook語法: `ansible-playbook --syntax-check ~/playbook.yml`
+
 運行Ansible Playbook的指令為`ansible-playbook -i inventory.ini playbook.yml`
 
 這上述兩種寫法都是可以運作的，執行成功的畫面如下：![](../Pictures/playbook_ok.png)
@@ -40,3 +42,4 @@ Module看起來有點長阿，主要是因為它包含了宣告是Ansible內建�
 # Reference
 [Ansible Getting started - Creating a playbook](https://docs.ansible.com/ansible/latest/getting_started/get_started_playbook.html)
 [Lin Cheng-Chieh HackMD - 學習 Ansible](https://hackmd.io/@blueskyson/learn-ansible)
+[Red Hat Docs - Chapter 13. Getting started with swap](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_storage_devices/getting-started-with-swap)
